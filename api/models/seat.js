@@ -1,9 +1,9 @@
 const { DataTypes, Model } = require('sequelize');
 
-class flight extends Model {}
+class seat extends Model {}
 
-function Flight(sequelize) {
-  flight.init(
+function Seat(sequelize) {
+  seat.init(
     {
       number: {
         type: DataTypes.STRING,
@@ -21,4 +21,4 @@ function Flight(sequelize) {
   );
 }
 
-module.exports = Flight;
+module.exports = Seat;

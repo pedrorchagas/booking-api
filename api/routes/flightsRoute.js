@@ -1,10 +1,10 @@
 const express = require('express');
-const bookingController = require('../controllers/bookingController');
+const flightsController = require('../controllers/flightsController');
 
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  await bookingController.getFlights({ req, res });
+  await flightsController.getFlights({ req, res });
 });
 
 module.exports = router;
